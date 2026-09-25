@@ -4,7 +4,7 @@
 # 因为DNS流程较多，尽可能用本地搭建DNS开启乐观缓存。
 # 因为配置里开启了绕过大陆，google商店会无法更新，可以尝试把 "+.googleapis.cn"  "+.xn--ngstr-lra8j.com" 两个域名后缀指定走国外DNS，同时rules里添加走代理，理论上可以解决，或者关闭绕过大陆。
 # 配置文件作为DNS分流工具的远程使用，搭配Nikki仅核心运行，如果要单独使用监听端口修改成53，去掉DNS劫持的注释。
-# 多订阅配置文件，适合多订阅精确控制订阅和和分流。
+# 多订阅配置文件，适合多订阅精确控制订阅和分流。
 # 根据需要修改对应修改锚点订阅名称
 rule-anchor:
   P: &P {type: http, interval: 0, health-check: {enable: true, url: 'https://www.gstatic.com/generate_204', interval: 300}, exclude-filter: "官网|剩余|流量|套餐|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate", proxy: 直连}
