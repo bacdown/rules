@@ -76,6 +76,10 @@ direct-dns-server = https://doh.pub/dns-query,https://dns.alidns.com/dns-query,s
 - `system` 为运营商 DNS，可删除以完全避免明文 DNS 泄漏
 - 建议仅保留公共 DoH 服务（如阿里云 DNS、腾讯 DNS 等）
 
+### sing-box
+
+- 使用方法请查看SingBox目录下README.md
+
 ## 使用方式
 
 ### Mihomo
