@@ -75,7 +75,7 @@ proxy-providers:
 
 ## 致谢
 
-部分配置结构和规则集参考或使用���以下项目：
+部分配置结构和规则集参考或使用以下项目：
 
 - [qichiyuhub/rule](https://github.com/qichiyuhub/rule)
 - [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)
