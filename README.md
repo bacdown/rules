@@ -1,6 +1,6 @@
 # rules
 
-个人维护的代理分流规则与客户端配置，面向 **Mihomo** 和 **Shadowrocket**。配置以按域名、IP 和服务分类进行分流为主，并针对 DNS、防泄漏、自动选节点和故障转移做了预设。
+个人维护的代理分流规则与客户端配置，面向 **Mihomo** 和 **Shadowrocket**。配置以按域名、IP 和服务分类进行分流为主，并针对 DNS、防泄漏、自动选节点做了较为完整的配置。
 
 > ⚠️ 这些配置需要根据自己的订阅、网络环境和客户端版本进行调整。使用前请先阅读对应配置中的注释，并自行确认规则和 DNS 行为是否符合预期。
 
@@ -48,6 +48,30 @@ proxy-providers:
 
 导入后，请在 `[Proxy]` 中填写或替换自己的节点，并根据实际节点名称调整 `[Proxy Group]` 中的筛选规则。
 
+#### 节点组与策略配置
+
+- **AUTO 节点组**：添加了分地区自动选择（HK、TW、JP、SG、KR、US），可根据实际节点情况调整测速间隔，避免频繁手动切换节点。
+- **FINAL 兜底规则**：默认使用 AUTO 策略。在软件界面选择的节点只影响 DNS 代理查询，建议启用自动回退并根据节点情况调整测速间隔（默认 600 秒）。
+
+#### DNS 配置说明
+
+配置中的 DNS 设置可根据实际需求调整：
+
+**代理 DNS（用于代理域名）**
+```
+dns-server = https://dns.google/dns-query#proxy
+```
+- `#proxy` 可保持默认（不指定节点），也可修改为具体节点组名称（如 `#AUTO`、`#JP自动选择`）或节点名称
+- 软件界面选择的节点只对代理 DNS 查询生效
+
+**直连 DNS（用于直连域名）**
+```
+direct-dns-server = https://doh.pub/dns-query,https://dns.alidns.com/dns-query,system
+```
+- 可根据需要修改 DNS 服务器地址
+- `system` 为运营商 DNS，可删除以完全避免明文 DNS 泄漏
+- 建议仅保留公共 DoH 服务（如阿里云 DNS、腾讯 DNS 等）
+
 ## 使用方式
 
 ### Mihomo
@@ -64,6 +88,8 @@ proxy-providers:
 2. 填入自己的代理节点或订阅。
 3. 按需启用或关闭 AI、广告、隐私等规则集。
 4. 开启连接后，通过 Shadowrocket 的请求记录检查规则命中情况。
+5. 根据需要在软件界面调整节点选择，推荐启用自动回退机制以提高连接稳定性。
+6. 可在配置中自定义代理 DNS 的查询节点和直连 DNS 服务器，根据实际网络环境优化 DNS 响应。
 
 ## 注意事项
 
@@ -75,7 +101,7 @@ proxy-providers:
 
 ## 致谢
 
-部分配置结构和规则集参考或使用以下项目：
+部分配置结构和规则集参考���使用以下项目：
 
 - [qichiyuhub/rule](https://github.com/qichiyuhub/rule)
 - [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)
