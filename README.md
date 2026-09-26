@@ -78,7 +78,7 @@ direct-dns-server = https://doh.pub/dns-query,https://dns.alidns.com/dns-query,s
 
 ### sing-box
 
-- 使用方法请查看SingBox目录下README.md
+- 使用方法请查看SingBox目录下`SingBox/README.md`
 
 ## 使用方式
 
