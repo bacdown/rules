@@ -33,7 +33,7 @@ rule-anchor:
   domain_text: &domain_text {type: http, interval: 86400, behavior: domain, format: text}
 
 proxy-providers:
-  mit: {<<: *P, url: "订阅URL", interval: 86400, override: {udp: true}}
+  name: {<<: *P, url: "订阅URL", interval: 86400, override: {udp: true}}
 
 proxies:
   - {name: 直连, type: direct, udp: true}
