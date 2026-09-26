@@ -92,7 +92,7 @@ python3 sub2singbox.py mihomo.yaml \
 
 省略 `-o` 时会在输入文件所在目录生成 `sing-box-phone.json`。手机模板保留 `auto_route`，不配置 `auto_redirect`，避免手机端因平台或权限差异无法初始化该功能。mixed 代理入口只监听 `127.0.0.1:7890`，不会向局域网开放。将生成的配置导入手机端 sing-box 客户端，并按客户端提示授予 VPN/TUN 权限。
 
-两份模板共用 DNS、策略组和分流规则；X 策略组承载 Twitter 分流，Tencent 规则集走直连。转换器会把订阅节点加入相应策略组。选择与运行设备匹配的模板，不要把 OpenWrt 模板导入手机端。
+两份模板共用 DNS、策略组和分流规则。转换器会把订阅节点加入相应策略组。选择与运行设备匹配的模板。
 
 ### 转换 Clash YAML 订阅链接
 
