@@ -8,6 +8,10 @@
 
 ```text
 .
+├── sing-box/
+│   ├── sub2singbox.py          # 配置转换脚本
+│   ├── config_phone.json       # 手机端模版文件
+│   └── config_openwrt.json     # openwrt模版文件
 ├── mihomo/
 │   ├── config.yaml       # 单订阅 Mihomo 配置
 │   └── mihomo2URL.yaml   # 双订阅 Mihomo 配置
