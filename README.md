@@ -21,7 +21,7 @@
 ### Mihomo
 
 - [`mihomo/config.yaml`](./mihomo/config.yaml)：适合单订阅使用，包含自动选择、故障转移和手动选择等策略组。
-- [`mihomo/mihomo2URL.yaml`](./mihomo/mihomo2URL.yaml)：适合双订阅使用，可分别配置 `SUB1` 和 `SUB2`，���按地区和策略类型进行管理。
+- [`mihomo/mihomo2URL.yaml`](./mihomo/mihomo2URL.yaml)：适合双订阅使用，可分别配置 `SUB1` 和 `SUB2`，按地区和策略类型进行管理。
 - 使用 Mihomo 的远程规则集，包含域名规则、IP 规则以及 Fake-IP 过滤规则。
 - 已预设 AI、Meta、YouTube、Google、GitHub、Telegram、Netflix、Microsoft、Apple、Steam 等服务的分流策略。
 - 默认启用 TUN、Fake-IP、DoH 和域名嗅探；具体行为请以配置文件和客户端版本为准。
@@ -30,7 +30,7 @@
 
 ```yaml
 proxy-providers:
-  mit:
+  name:
     url: "订阅URL"
 ```
 
