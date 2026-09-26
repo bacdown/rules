@@ -58,20 +58,13 @@ SUPPORTED_URI_PREFIXES = (
 
 SUBSCRIPTION_INFO_KEYWORDS = (
     "剩余流量",
-    "剩余：",
-    "剩余:",
-    "距离下次重置",
-    "下次重置",
-    "重置时间",
-    "流量重置",
-    "套餐到期",
-    "到期时间",
-    "到期日期",
-    "过期时间",
+    "流量",
+    "重置",
+    "到期",
+    "过期",
     "有效期",
-    "订阅信息",
-    "订阅地址",
 )
+
 
 
 def is_probably_subscription_text(text):
