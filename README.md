@@ -78,7 +78,7 @@ direct-dns-server = https://doh.pub/dns-query,https://dns.alidns.com/dns-query,s
 
 ### sing-box
 
-- 使用方法请查看SingBox目录下[`SingBox/README.md`](./SingBox/README.md)
+- 配置说明请查看SingBox目录下[`SingBox/README.md`](./SingBox/README.md)
 
 ## 使用方式
 
@@ -98,6 +98,10 @@ direct-dns-server = https://doh.pub/dns-query,https://dns.alidns.com/dns-query,s
 4. 开启连接后，通过 Shadowrocket 的请求记录检查规则命中情况。
 5. 根据需要在软件界面调整节点选择，推荐启用自动回退机制以提高连接稳定性。
 6. 可在配置中自定义代理 DNS 的查询节点和直连 DNS 服务器，根据实际网络环境优化 DNS 响应。
+
+### sing-box
+
+- 使用方法请查看SingBox目录下[`SingBox/README.md`](./SingBox/README.md)
 
 ## 注意事项
 
