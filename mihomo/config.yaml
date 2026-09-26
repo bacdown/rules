@@ -188,9 +188,9 @@ proxy-groups:
 
 rules:
   - AND,((RULE-SET,cn!_domain),(DST-PORT,443),(NETWORK,UDP)),REJECT
-  - DOMAIN-SUFFIX,push.apple.com,默认代理
-  - DOMAIN-SUFFIX,akadns.net,默认代理
-  - IP-CIDR,194.221.250.50/32,REJECT
+  - DOMAIN-SUFFIX,push.apple.com,默认代理 #解决苹果一些软件收不到推送
+  - DOMAIN-SUFFIX,akadns.net,默认代理 #解决苹果一些软件收不到推送
+  - IP-CIDR,194.221.250.50/32,REJECT #Mac版telegram未知的请求
   - RULE-SET,private_ip,直连,no-resolve
   - RULE-SET,private_domain,直连
   - RULE-SET,ai_domain,AI
