@@ -50,7 +50,7 @@ proxy-providers:
 
 #### 节点组与策略配置
 
-- **AUTO 节点组**：添加了分地区自动选择（HK、TW、JP、SG、KR、US），可根据实际节点情况调整测速间隔，避免频繁手动切换节点。
+- **AUTO 节点组**：添加了分地区自动选择（HK、TW、JP、SG、KR、US），可根据实际节点情况调整测速间隔，避免网络波动节点失效。
 - **FINAL 兜底规则**：默认使用 AUTO 策略。在软件界面选择的节点只影响 DNS 代理查询，建议启用自动回退并根据节点情况调整测速间隔（默认 600 秒）。
 
 #### DNS 配置说明
@@ -101,7 +101,7 @@ direct-dns-server = https://doh.pub/dns-query,https://dns.alidns.com/dns-query,s
 
 ## 致谢
 
-部分配置结构和规则集参考���使用以下项目：
+部分配置结构和规则集参考使用以下项目：
 
 - [qichiyuhub/rule](https://github.com/qichiyuhub/rule)
 - [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)
