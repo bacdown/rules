@@ -79,7 +79,7 @@
       {"rule_set": "geosite-usd", "outbound": "PayPal"},
       {"rule_set": "geosite-steamcn", "outbound": "直连"},
       {"rule_set": "geosite-steam", "outbound": "Steam"},
-      {"rule_set": "geosite-tencent", "outbound": "直连"},
+      {"rule_set": "geosite-wechat", "outbound": "直连"},
       {"rule_set": "geosite-twitter", "outbound": "X"},
       {"rule_set": "geosite-!cn", "outbound": "默认代理"},
       {"action": "resolve"},
@@ -112,7 +112,7 @@
       {"tag": "geoip-telegram", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs"},
       {"tag": "geoip-netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs"},
       {"tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/OneOhCloud/one-geoip/rule-set/one-china.srs"},
-      {"tag": "geosite-tencent", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/tencent.srs"},
+      {"tag": "geosite-wechat", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/bacdown/rules/main/sing-box/rule/WeChat.srs"},
       {"tag": "geosite-twitter", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/twitter.srs"}
     ],
     "final": "漏网之鱼",
