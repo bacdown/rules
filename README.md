@@ -44,6 +44,7 @@
 ### Shadowrocket
 
 导入 `Shadowrocket/config.ini`，在 `[Proxy]` 中填写自己的节点或订阅，并按实际节点名称检查 `[Proxy Group]` 的筛选条件。
+或者保持 `[Proxy]` 默认就行，默认选择的是客户端手动选择或者启用回退后系统自动选择的节点，只影响DNS查询节点。
 
 ### sing-box 订阅转换
 
